@@ -1,0 +1,21 @@
+CREATE TABLE membres (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(50) NOT NULL,
+    prenom VARCHAR(50) NOT NULL,
+    jour_naissance INT NOT NULL,
+    mois_naissance INT NOT NULL,
+    annee_naissance INT NOT NULL,
+    lieux_naissance VARCHAR(100) NOT NULL,
+    poids DECIMAL(5,2) NOT NULL,
+    allergies VARCHAR(255),
+    numero_licence VARCHAR(20) NOT NULL,
+    adresse_mail VARCHAR(100) NOT NULL,
+    adresse VARCHAR(100) NOT NULL,
+    numero_telephone VARCHAR(20) NOT NULL,
+    parents VARCHAR(100),
+    tenue_rouge TINYINT(1) NOT NULL,
+    tenue_bleue TINYINT(1) NOT NULL,
+    chaussons TINYINT(1) NOT NULL,
+    photo VARCHAR(255) NOT NULL,
+    role VARCHAR(50) NOT NULL
+);
